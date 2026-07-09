@@ -7,6 +7,7 @@ An end-to-end web application built inside a Jupyter Notebook environment to ext
 ## Features
 
 *   **Automated Transcript Fetching:** Extracts English captions directly from public YouTube URLs using the YouTube Transcript API.
+*   **Smart Link Parsing:** Automatically searches for the special `v` parameter (`v=`) in standard YouTube URLs to extract the unique video ID, while also handling short-form links (`youtu.be/`) seamlessly.
 *   **Local Transformers Inference:** Runs the `facebook/bart-large-cnn` model natively within the notebook environment to generate precise, abstractive summaries.
 *   **Decoupled Backend Architecture:** Runs a FastAPI server securely in a background thread to manage model inference.
 *   **Interactive Web UI:** Provides an intuitive Streamlit interface to input video links and view summarized results instantly.
